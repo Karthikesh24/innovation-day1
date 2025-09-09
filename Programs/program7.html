@@ -19,7 +19,7 @@
         function updateDisplay(){
            let minits=String(Math.floor(seconds / 60)).padStart(2,'0');
            let secnds=String(seconds % 60).padStart(2,'0');
-           document.getElementById("display").textContent=${minits}:${secnds};
+           document.getElementById("display").textContent=`${minits}:${secnds}`;
         }
         function Start(){
            if(intervelId === null){
@@ -43,4 +43,5 @@
         }
     </script>
 </body>
+
 </html>
